@@ -1,0 +1,10 @@
+dist
+bazel-out
+node_modules
+.idea/
+.ijwb/
+cdk.out/
+classes/
+.cpcache/
+target/
+.DS_Store

@@ -1,0 +1,12 @@
+package(default_visibility = ["//visibility:public"])
+
+load("//rules/kaocha:rules.bzl", "kaocha")
+
+kaocha(
+    name = "example",
+    package = "example",
+    prefix = "javatests",
+    testResources = glob(["*.json"]),
+    tests = glob(["*.clj"]),
+    deps = ["//java/example"],
+)
